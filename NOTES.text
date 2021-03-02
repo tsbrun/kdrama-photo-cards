@@ -1,7 +1,13 @@
 ~ TASKS ~
 
+Before I do any of this, I need to figure out the flow of my app. 
+Home page? What does login / signup look like? What happens afterward? 
+How do you create photo cards? Where do links lead to? 
+
+Need to finish this planning before I can start coding.
+
 Phase 1 : User Login
-    1. Set up Sessions controller
+    1. Set up Sessions controller (Do I even need one?)
     2. Set up User model and controller 
     3. Set up Rails signup / login 
     4. Set up Google OAuth signup / login 
