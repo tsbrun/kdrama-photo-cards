@@ -1,0 +1,13 @@
+~ TASKS ~
+
+Phase 1 : User Login
+    1. Set up Sessions controller
+    2. Set up User model and controller 
+    3. Set up Rails signup / login 
+    4. Set up Google OAuth signup / login 
+
+Phase 2 : Models & Database  
+
+Phase 3 : Index Views 
+
+Phase 4 : Forms 
