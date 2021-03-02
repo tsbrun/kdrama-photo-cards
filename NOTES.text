@@ -10,6 +10,7 @@ Phase 1 : User Login
     1. Set up Sessions controller (Do I even need one?)
     2. Set up User model and controller 
     3. Set up Rails signup / login 
+        => check project requirements for specific form validation req
     4. Set up Google OAuth signup / login 
 
 Phase 2 : Models & Database  
