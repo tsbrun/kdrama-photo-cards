@@ -13,3 +13,100 @@
  *= require_tree .
  *= require_self
  */
+
+html,
+body {
+  /*  make header span entire width of page  */
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+#main-content {
+  /*   so the main content does not span entire width of page  */
+  margin: 5px 2%;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #cb8fff;
+  padding: 20px 10px;
+  /*   border-radius: 25px; */
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #b5edff;
+  color: black;
+  border-radius: 25px;
+}
+
+.header a.active {
+  background-color: #b5edff;
+  color: #770fd1;
+  border-radius: 25px;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  /*  links are displayed one on top of another when screen size is 500px or less  */
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  background-color: #cb8fff;
+}
+
+#footer address {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+input {
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding: 5px;
+  /*   font-family: "Sniglet", cursive; */
+  font-size: 1em;
+  color: #770fd1;
+  border: solid 1px #b5edff;
+}
