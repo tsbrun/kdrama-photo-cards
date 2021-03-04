@@ -18,3 +18,8 @@ Phase 2 : Models & Database
 Phase 3 : Index Views 
 
 Phase 4 : Forms 
+
+To Write About in Blog Post
+- webpacker error (temporary solution; more research)
+- manually adding authenticity token (research on csrf)
+- process of using css with template (looking up tutorials, codepen)
