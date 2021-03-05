@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :characters, only: [:index]
   resources :actors, only: [:index]
   resources :dramas, only: [:index]
   resources :users, only: [:new, :create]
