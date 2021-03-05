@@ -22,4 +22,5 @@ Phase 4 : Forms
 To Write About in Blog Post
 - webpacker error (temporary solution; more research)
 - manually adding authenticity token (research on csrf)
+    https://stackoverflow.com/questions/36000511/rails-4-how-to-add-authenticity-token-to-forms-rendered-via-partial
 - process of using css with template (looking up tutorials, codepen)
