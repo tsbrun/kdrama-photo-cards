@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   get 'welcome', to: 'sessions#welcome'
   get 'logout', to: 'sessions#logout'
-  
+
   root "home#index"
 
   # Routes for Google authentication
-  get ‘auth/:provider/callback’, to: ‘sessions#googleAuth’
-  get ‘auth/failure’, to: redirect(‘/’)
+  get "auth/:provider/callback", to: "sessions#googleAuth"
+  get "auth/failure", to: redirect("home#index")
 end
