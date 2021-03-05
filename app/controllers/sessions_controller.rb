@@ -12,7 +12,9 @@ class SessionsController < ApplicationController
     end
   end
 
-  def login
+  def logout
+    session.delete :user_id
+    redirect_to welcome_path
   end
 
   def welcome
