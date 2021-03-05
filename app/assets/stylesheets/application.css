@@ -110,3 +110,8 @@ input {
   color: #770fd1;
   border: solid 1px #b5edff;
 }
+
+img#home-icon {
+  width: 32px;
+  height: 32px;
+}
