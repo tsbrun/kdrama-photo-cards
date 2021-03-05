@@ -56,11 +56,11 @@ body {
   border-radius: 25px;
 }
 
-.header a.active {
+/* .header a.active {
   background-color: #b5edff;
   color: #770fd1;
   border-radius: 25px;
-}
+} */
 
 .header-right {
   float: right;
