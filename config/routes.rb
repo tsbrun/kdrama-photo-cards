@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root "home#index"
 
   # Routes for Google authentication
+  get 'google_login', to: redirect("/auth/google_oauth2")
   get "auth/:provider/callback", to: "sessions#googleAuth"
   get "auth/failure", to: redirect("home#index")
 end
