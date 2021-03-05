@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_05_205014) do
+ActiveRecord::Schema.define(version: 2021_03_05_210209) do
+
+  create_table "actors", force: :cascade do |t|
+    t.string "name"
+    t.string "gender"
+    t.string "img_url"
+    t.string "wiki_url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "dramas", force: :cascade do |t|
     t.string "title"
