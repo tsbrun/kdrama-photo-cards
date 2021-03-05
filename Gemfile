@@ -60,3 +60,5 @@ gem 'bcrypt'
 gem 'omniauth'
 gem 'dotenv-rails'
 gem 'omniauth-google-oauth2'
+
+gem 'pry'
