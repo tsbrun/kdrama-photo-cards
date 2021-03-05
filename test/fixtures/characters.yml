@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  role: MyString
+  gender: MyString
+  img_url: MyString
+  wiki_url: MyString
+
+two:
+  role: MyString
+  gender: MyString
+  img_url: MyString
+  wiki_url: MyString
