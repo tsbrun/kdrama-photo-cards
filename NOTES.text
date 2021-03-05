@@ -28,3 +28,8 @@ To Write About in Blog Post
 Error: "No route matches [GET] "/auth/google_oauth2"
 Changed google sign in link to post request and I was finally redirected to Google sign in page 
 https://www.debugcn.com/en/article/50734743.html
+
+Error: "No client_id"
+Error Link: https://accounts.google.com/signin/oauth/error?authError=Cg9pbnZhbGlkX3JlcXVlc3QSJU1pc3NpbmcgcmVxdWlyZWQgcGFyYW1ldGVyOiBjbGllbnRfaWQaNWh0dHA6Ly9jb2RlLmdvb2dsZS5jb20vYXBpcy9hY2NvdW50cy9kb2NzL09BdXRoMi5odG1sIJAD&client_id
+Had to set local_env.yml as the environment file in config/application.rb 
+https://itnext.io/environment-variables-in-ruby-on-rails-17e4934cfd71
