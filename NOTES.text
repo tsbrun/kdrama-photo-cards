@@ -33,3 +33,14 @@ Error: "No client_id"
 Error Link: https://accounts.google.com/signin/oauth/error?authError=Cg9pbnZhbGlkX3JlcXVlc3QSJU1pc3NpbmcgcmVxdWlyZWQgcGFyYW1ldGVyOiBjbGllbnRfaWQaNWh0dHA6Ly9jb2RlLmdvb2dsZS5jb20vYXBpcy9hY2NvdW50cy9kb2NzL09BdXRoMi5odG1sIJAD&client_id
 Had to set local_env.yml as the environment file in config/application.rb 
 https://itnext.io/environment-variables-in-ruby-on-rails-17e4934cfd71
+
+- If you accidentally seed the database twice, rails db:reset 
+
+- When I did that, I encountered this error : ActiveRecord::NotNullViolation: SQLite3::ConstraintException: NOT NULL constraint failed: characters.actor_id 
+=> I made that association optional in the model, but not in the database table. I removed the constraint with the following migration: 
+
+class ChangeActorIdNull < ActiveRecord::Migration[6.1]
+  def change
+    change_column_null :characters, :actor_id, true
+  end
+end
