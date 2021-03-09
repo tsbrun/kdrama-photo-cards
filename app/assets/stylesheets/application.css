@@ -133,7 +133,7 @@ img#home-icon {
   width: auto;
 }
 
-#drama-photo-cards {
+#drama-photo-cards, #actor-photo-cards, #character-photo-cards {
   margin: 0 auto;
 }
 
