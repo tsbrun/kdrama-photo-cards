@@ -1,1 +1,11 @@
 <h1>Actors#index</h1>
+
+<div id="actor-photo-cards">
+    <% @actors.each do |actor| %>
+        <div class="card">
+            <%= image_tag "#{actor.img_url}", alt: "#{actor.name}", class: "drama-photo" %>
+            <p><%= actor.name %></p>
+            <%= link_to "#{actor.name} Wiki", actor.wiki_url %>
+        </div>
+    <% end %>
+</div>
