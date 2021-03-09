@@ -1,1 +1,11 @@
 <h1>Characters#index</h1>
+
+<div id="character-photo-cards">
+    <% @characters.each do |character| %>
+        <div class="card">
+            <%= image_tag "#{character.img_url}", alt: "#{character.name}", class: "drama-photo" %>
+            <p><%= character.name %></p>
+            <p><%= character.role %></p>
+        </div>
+    <% end %>
+</div>
