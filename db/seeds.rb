@@ -28,9 +28,7 @@ actors = Actor.create([
 #     { name: 'Heo Joon-jae / Kim Dam-ryeong', role: 'Leading Man (teenage version)', gender: 'male', img_url: 'https://i.pinimg.com/originals/cf/6a/0c/cf6a0cbabc21175e99d61cda8bc0be4d.jpg', wiki_url: '' }
 # ])
 
-crash_landing = Drama.find_by(title: 'Crash Landing on You')     
-# hyun_bin = Actor.find_by(name: 'Hyun Bin')
-# rjh = Character.find_by(name: 'Ri Jeong-hyeok')
-
-# crash_landing.characters << rjh 
-# hyun_bin.characters << rjh 
+crash_landing = Drama.find_by(title: 'Crash Landing on You')  
+crash_landing.characters.create(name: 'Ri Jeong-hyeok', role: 'Leading Man', gender: 'male', img_url: 'https://assetmetrostyle.blob.core.windows.net/prod/metro.style/media/assets/banner-landscape-crash-landing-on-you-hyun-bin-grooming.jpg')
+hyun_bin = Actor.find_by(name: 'Hyun Bin')
+hyun_bin.characters << Character.find_by(name: 'Ri Jeong-hyeok')
