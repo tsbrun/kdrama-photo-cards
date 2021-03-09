@@ -1,0 +1,12 @@
+<%= form_for @drama do |f| %>
+    <%= f.label :title, "Title" %>
+    <%= f.text_field :title %><br><br>
+
+    <%= f.label :img_url, "Image URL" %>
+    <%= f.text_field :img_url %><br><br>
+
+    <%= f.label :wiki_url, "Wiki URL" %>
+    <%= f.text_field :wiki_url %><br><br>
+
+    <%= f.submit %>
+<% end %>
