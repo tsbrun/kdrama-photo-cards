@@ -12,4 +12,10 @@ class DramasController < ApplicationController
   def create 
 
   end
+
+  private 
+
+  def drama_params
+    params.require(:drama).permit(:title, :img_url, :wiki_url)
+  end
 end
