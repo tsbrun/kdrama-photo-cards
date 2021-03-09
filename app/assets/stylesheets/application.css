@@ -115,3 +115,32 @@ img#home-icon {
   width: 32px;
   height: 32px;
 }
+
+.card {
+  text-align: center;
+  border: #cb8fff solid 1px;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px #b5edff;
+}
+
+.drama-photo {
+  justify-self: center;
+  height: 20rem;
+  width: auto;
+}
+
+#drama-photo-cards {
+  margin: 0 auto;
+}
+
+div.card > p {
+  position: relative;
+  border: none;
+  height: 3rem;
+  font-size: 15px;
+  justify-self: left;
+}
