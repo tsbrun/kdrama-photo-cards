@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_05_212417) do
+ActiveRecord::Schema.define(version: 2021_03_09_171437) do
 
   create_table "actors", force: :cascade do |t|
     t.string "name"
@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 2021_03_05_212417) do
     t.string "wiki_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "drama_id", null: false
+    t.index ["drama_id"], name: "index_characters_on_drama_id"
   end
 
   create_table "dramas", force: :cascade do |t|
@@ -51,4 +53,5 @@ ActiveRecord::Schema.define(version: 2021_03_05_212417) do
     t.string "google_refresh_token"
   end
 
+  add_foreign_key "characters", "dramas"
 end
