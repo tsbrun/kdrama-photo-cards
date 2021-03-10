@@ -4,6 +4,10 @@ class CharactersController < ApplicationController
     
     def index 
         @characters = Drama.find_by(id: params[:drama_id]).characters
+        if @characters.empty? 
+            flash[:error] = "There are no characters for this drama."
+            redirect_to dramas_path
+        end
     end
 
     def new 
