@@ -6,10 +6,12 @@
 
 <div id="drama-photo-cards">
     <% @dramas.each do |drama| %>
+        <a href="<%= drama_characters_path(drama.id) %>">
         <div class="card">
             <%= image_tag "#{drama.img_url}", alt: "#{drama.title}", class: "drama-photo" %>
             <p><%= drama.title %></p>
             <%= link_to "#{drama.title} Wiki", drama.wiki_url %>
         </div>
+        </a>
     <% end %>
 </div>
