@@ -19,4 +19,10 @@ class CharactersController < ApplicationController
             render :new
         end
     end
+
+    private 
+
+    def character_params
+        params.require(:character).permit(:name, :gender, :role, :img_url)
+    end
 end
