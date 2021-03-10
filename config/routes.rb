@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   resources :characters, only: [:index]
   resources :actors, only: [:index, :new, :create]
-  resources :dramas, only: [:index, :new, :create]
+  resources :dramas, only: [:index, :new, :create] do 
+    resources :characters, only: [:index, :new, :create]
+  end
   resources :users, only: [:new, :create]
   
   get 'login', to: 'sessions#new'
