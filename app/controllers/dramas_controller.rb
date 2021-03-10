@@ -12,6 +12,7 @@ class DramasController < ApplicationController
   def create 
     @drama = Drama.new(drama_params)
     if @drama.save 
+      flash[:success] = "Your drama was added successfully."
       redirect_to dramas_path
     else
       render :new
