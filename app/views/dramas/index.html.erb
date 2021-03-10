@@ -2,6 +2,8 @@
 
 <% if flash[:success] %>
     <%= flash[:success] %>
+<% elsif flash[:error] %>
+    <%= flash[:error] %>
 <% end %>
 
 <div id="drama-photo-cards">
