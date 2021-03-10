@@ -1,0 +1,19 @@
+<%= form_for @character, options = {url: drama_characters_path(params[:drama_id])} do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br><br>
+
+    <%= f.label :gender, 'Male' %>
+    <%= f.radio_button :gender, 'male' %><br>
+    <%= f.label :gender, 'Female' %>
+    <%= f.radio_button :gender, 'female' %>
+
+    <br><br>
+
+    <%= f.label :role %>
+    <%= f.text_field :role %><br><br>
+
+    <%= f.label :img_url, 'Image URL' %>
+    <%= f.text_field :img_url %><br><br>
+
+    <%= f.submit %>
+<% end %>
