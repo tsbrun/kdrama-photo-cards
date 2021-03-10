@@ -18,4 +18,10 @@ class ActorsController < ApplicationController
             render :new
         end
     end
+
+    private 
+
+    def actor_params
+        params.require(:actor).permit(:name, :gender, :img_url, :wiki_url)
+    end
 end
