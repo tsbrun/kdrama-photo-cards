@@ -1,0 +1,15 @@
+<%= form_for @actor do |f| %>
+    <%= f.label :name, "Name" %>
+    <%= f.text_field :name %><br><br>
+
+    <%= f.label :gender, "Gender" %>
+    <%= f.text_field :gender %><br><br>
+
+    <%= f.label :img_url, "Image URL" %>
+    <%= f.text_field :img_url %><br><br>
+
+    <%= f.label :wiki_url, "Wiki URL" %>
+    <%= f.text_field :wiki_url %><br><br>
+
+    <%= f.submit %>
+<% end %>
