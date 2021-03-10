@@ -5,4 +5,8 @@ class CharactersController < ApplicationController
     def index 
         @characters = Drama.find_by(id: params[:drama_id]).characters
     end
+
+    def new 
+        @character = Character.new
+    end
 end
