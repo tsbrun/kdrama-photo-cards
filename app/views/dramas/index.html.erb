@@ -1,5 +1,9 @@
 <h1>Dramas</h1>
 
+<% if flash[:success] %>
+    <%= flash[:success] %>
+<% end %>
+
 <div id="drama-photo-cards">
     <% @dramas.each do |drama| %>
         <div class="card">
