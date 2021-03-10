@@ -10,7 +10,12 @@ class DramasController < ApplicationController
   end
 
   def create 
-
+    @drama = Drama.new(drama_params)
+    if @drama.save 
+      redirect_to dramas_path
+    else
+      render :new
+    end
   end
 
   private 
