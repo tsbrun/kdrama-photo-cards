@@ -3,4 +3,5 @@ class Drama < ApplicationRecord
     has_many :actors, through: :characters
 
     validates_presence_of :title, :img_url, :wiki_url
+    validates_uniqueness_of :title
 end
