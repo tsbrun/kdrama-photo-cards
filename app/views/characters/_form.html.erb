@@ -15,5 +15,8 @@
     <%= f.label :img_url, 'Image URL' %>
     <%= f.text_field :img_url %><br><br>
 
+    <%= f.label 'Select an Actor:' %>
+    <%= f.select :actor_id, Actor.all.collect {|a| [ a.name, a.id ] }, include_blank: true %><br><br>
+
     <%= f.submit %>
 <% end %>
