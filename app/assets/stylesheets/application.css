@@ -130,7 +130,7 @@ img#home-icon {
 .drama-photo {
   justify-self: center;
   height: 20rem;
-  width: auto;
+  width: 15rem;
 }
 
 #drama-photo-cards, #actor-photo-cards, #character-photo-cards {
